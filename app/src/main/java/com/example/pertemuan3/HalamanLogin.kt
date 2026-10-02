@@ -21,8 +21,6 @@ import androidx.compose.ui.unit.sp
 fun HalamanLogin(modifier: Modifier = Modifier) {
 
     val background = painterResource(id = R.drawable.background)
-    val logo = painterResource(id = R.drawable.logo)
-    val profile = painterResource(id = R.drawable.profile)
 
     Box(
         modifier = modifier.fillMaxSize()
@@ -56,6 +54,12 @@ fun HalamanLogin(modifier: Modifier = Modifier) {
                 fontSize = 36.sp,
                 fontWeight = FontWeight.Bold,
                 color = Color.Blue
+            )
+
+            Text(
+                text = "Ini adalah halaman login,",
+                fontSize = 18.sp,
+                color = Color.White
             )
 
         }
