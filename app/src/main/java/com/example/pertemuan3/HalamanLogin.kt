@@ -70,6 +70,7 @@ fun HalamanLogin(modifier: Modifier = Modifier) {
                 contentDescription = "Logo",
                 modifier = Modifier
                     .size(150.dp)
+                    .padding(5.dp)
             )
         }
     }
