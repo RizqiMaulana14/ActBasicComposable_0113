@@ -39,5 +39,14 @@ fun HalamanLogin(modifier: Modifier = Modifier) {
                     Color.Black.copy(alpha = 0.35f)
                 )
         )
+
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(horizontal = 30.dp),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+
+        }
     }
 }
