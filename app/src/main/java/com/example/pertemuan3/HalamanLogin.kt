@@ -19,4 +19,18 @@ import androidx.compose.ui.unit.sp
 @Composable
 fun HalamanLogin(modifier: Modifier = Modifier) {
 
+    val background = painterResource(id = R.drawable.background)
+
+    Box(
+        modifier = modifier.fillMaxSize()
+    ) {
+
+        Image(
+            painter = background,
+            contentDescription = null,
+            modifier = Modifier.fillMaxSize(),
+            contentScale = ContentScale.Crop
+        )
+
+    }
 }
