@@ -103,7 +103,13 @@ fun HalamanLogin(modifier: Modifier = Modifier) {
                 painter = profile,
                 contentDescription = "Foto Profil",
                 modifier = Modifier
-                    .size(390.dp),
+                    .size(390.dp)
+                    .clip(CircleShape)
+                    .border(
+                        width = 3.dp,
+                        color = Color.White,
+                        shape = CircleShape
+                    ),
                 contentScale = ContentScale.Crop
             )
         }
