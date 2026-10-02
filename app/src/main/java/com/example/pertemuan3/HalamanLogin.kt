@@ -21,6 +21,7 @@ import androidx.compose.ui.unit.sp
 fun HalamanLogin(modifier: Modifier = Modifier) {
 
     val background = painterResource(id = R.drawable.background)
+    val logo = painterResource(id = R.drawable.logo)
 
     Box(
         modifier = modifier.fillMaxSize()
@@ -62,6 +63,14 @@ fun HalamanLogin(modifier: Modifier = Modifier) {
                 color = Color.White
             )
 
+            Spacer(modifier = Modifier.height(55.dp))
+
+            Image(
+                painter = logo,
+                contentDescription = "Logo",
+                modifier = Modifier
+                    .size(150.dp)
+            )
         }
     }
 }
