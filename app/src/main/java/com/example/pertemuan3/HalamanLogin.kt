@@ -22,6 +22,7 @@ fun HalamanLogin(modifier: Modifier = Modifier) {
 
     val background = painterResource(id = R.drawable.background)
     val logo = painterResource(id = R.drawable.logo)
+    val profile = painterResource(id = R.drawable.profile)
 
     Box(
         modifier = modifier.fillMaxSize()
@@ -94,6 +95,16 @@ fun HalamanLogin(modifier: Modifier = Modifier) {
                 fontSize = 25.sp,
                 fontWeight = FontWeight.Bold,
                 color = Color.Black
+            )
+
+            Spacer(modifier = Modifier.height(30.dp))
+
+            Image(
+                painter = profile,
+                contentDescription = "Foto Profil",
+                modifier = Modifier
+                    .size(390.dp),
+                contentScale = ContentScale.Crop
             )
         }
     }
